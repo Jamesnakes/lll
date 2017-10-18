@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="1.css" />
+		<link rel="stylesheet" href="js/swiper.css" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			.swiper-container{
+				width: 100% !important;
+			}
+			.swiper-container>.swiper-slide>img{
+				width: 100px !important;
+			}
+			.swiper-pagination-bullet{
+				background: red;
+			}
+			.pag{
+				height: 30px;
+				width: 100px !important;
+				position: absolute;
+				left: 500px !important;
+				top: 210px;
+			}
+			.cao{
+				height: 300px;
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content:  space-around;
+				text-align: center;
+			}
+			.cao>div{
+				height: 120px;
+				width: 140px;
+			}
+			.cao>div>img{
+				height: 100px;
+				width: 100%;
+			}
+			.sb{
+				height: 100px;
+				width: 100%;
+				text-align: center;
+			}
+			.sb>h1{
+				float: left;
+				margin-left: 200px;
+				color: red;
+			}
+			.sb>span{
+				line-height: 90px;
+				margin-left: -170px;
+				color: gray;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="div1"><img src="img/mlogo-year.png" /></div>
+			<div class="div2"><img src="img/fangdajing.png" /></div>
+		</header>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide"><img src="img/1.jpg"/></div>
+				<div class="swiper-slide"><img src="img/2.jpg"/></div>
+				<div class="swiper-slide"><img src="img/3.jpg"/></div>
+			</div>
+			<div class="swiper-pagination pag"></div>
+		</div>
+		<div class="cao">
+			<div><img src="img/s01.png"/><p>选表中心</p></div>
+			<div><img src="img/s02.png"/><p>选表中心</p></div>
+			<div><img src="img/s03.png"/><p>选表中心</p></div>
+			<div><img src="img/s04.png"/><p>选表中心</p></div>
+			<div><img src="img/s05.png"/><p>选表中心</p></div>
+			<div><img src="img/s06.png"/><p>选表中心</p></div>
+			<div><img src="img/s07.png"/><p>选表中心</p></div>
+			<div><img src="img/s08.png"/><p>选表中心</p></div>
+		</div>
+		
+		<div class="sb">
+			<h1>闪购</h1>
+			<span>限时限量，抢完为止</span>
+		</div>
+	</body>
+
+</html>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+		autoplay: 4000, //可选选项，自动滑动
+		pagination : '.swiper-pagination',
+	})
+</script>
